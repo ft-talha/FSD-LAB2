@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FSD LAB 2</title>
     <style>
+        :root {
+            /*variables*/
+            --background: radial-gradient(black, white);
+        }
+
         html {
             font-size: 20px;
             color: rgb(141, 7, 30);
             font-weight: 800;
-            background-color: black;
+            background: var(--background);
             font-size: 20px;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
@@ -20,11 +25,11 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-
         }
 
         .btns button {
             margin-bottom: 12px;
+
         }
 
         .inherit {
@@ -33,6 +38,7 @@
             height: 4rem;
             width: 14vw;
             font-size: inherit;
+
         }
 
         .initial {
@@ -146,10 +152,18 @@
             background-color: blanchedalmond;
             padding: 19px;
         }
+
+        .talha {
+            position: sticky;
+            top: 10px;
+            left: 10px;
+            background-color: aliceblue;
+        }
     </style>
 </head>
 
 <body>
+    <h2 class="talha"> lab practice</h2>
     <div style="border: 10px solid white;padding: 12px;">
         <div class="btns">
             <button class="inherit"> hello</button>
